@@ -1,0 +1,19 @@
+#!/bin/bash
+i=0
+for tmpfile in `find ./test_program`
+do
+    if [[ $i = 0 ]];then
+	i=1
+    else
+	echo $tmpfile
+	`g++ $tmpfile`
+	`./a.out <in >out`
+    fi
+done
+tmp=`comm -3 out sdout`
+if [[ $tmp != "" ]];then
+    echo $tmp
+    echo 'diff'
+else
+    echo 'same'
+fi

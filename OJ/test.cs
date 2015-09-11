@@ -1,0 +1,22 @@
+public class Program {
+       public class FClass{
+       	      public void Print()
+	      {
+		System.Console.WriteLine("Hello");
+		}
+	}
+	public class SClass:FClass
+	{
+		public void SPrint()
+		{
+			Print();
+		}
+	}
+
+	static public void Main()
+	{
+		SClass h = new SClass();
+//		h.SPrint();
+		System.Console.WriteLine(int.MaxValue);
+	}
+}

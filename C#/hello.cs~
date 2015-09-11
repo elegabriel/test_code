@@ -204,22 +204,7 @@ end
 		System.Console.WriteLine(fn/0);
 
 		System.Console.WriteLine(3.402823E38f*-2f);//上边界约为3.4*10^38,下边界-3.4*10^38;
-		
-		try{
-			AgeCount();
-		}
-		catch(FormatException)
-		{
-			Console.WriteLine("Main FormatException");
-		}
-		finally
-		{
-			Console.WriteLine("Main finally");
-		}
-	}
-	
-	static void AgeCount(){
-		
+
 		string ageText;
 		int age;
 		
@@ -233,7 +218,7 @@ end
 		catch(FormatException)
 		{
 			Console.WriteLine("The int entered, {0}, is not valid.",ageText);
-//			throw;
+			throw;
 		}
 		catch(Exception exception)
 		{
@@ -241,7 +226,7 @@ end
 		}
 		finally
 		{
-			Console.WriteLine("AgeCount finally");
+			Console.WriteLine("OK");
 		}
 	}
 }

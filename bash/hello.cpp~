@@ -1,0 +1,9 @@
+#include <iostream>
+#include <string>
+void main()
+{
+  std::string in;
+  std::cin>>in;
+  std::cout<<"hello,"<<in<<std::endl;
+
+}

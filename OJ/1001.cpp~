@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+#include <string>
+int main()
+{
+  long a,b;
+  cin>>a;cin>>b;
+  long c=a+b;
+  long count=1000;
+  int flag=(c<0)?-1:1;
+  c*=flag;
+  while(c/count)
+    {
+      count*=1000;
+    }
+  count/=1000;
+  if(flag==-1)
+    cout<<"-";
+  while(count!=1)
+    {
+      cout<<c/count<<",";
+      c/=count;
+      count/=1000;
+    }
+  cout<<c/count;
+  return 0;
+}

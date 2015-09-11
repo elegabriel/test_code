@@ -1,0 +1,29 @@
+public abstract class PdaItem
+{
+	public abstract void print(PdaItem pda);
+}
+
+public class Contact: PdaItem
+{
+	public override void print(PdaItem pda)
+	{
+		if(this != null)
+			System.Console.WriteLine("NOT NULL");
+		else
+			System.Console.WriteLine("NULL");
+	}
+}
+
+public class Program
+{
+	public static void Main()
+	{
+		Contact contact = new Contact();
+		//contact.print();
+		System.Console.WriteLine(42.Equals(42));
+		System.Console.WriteLine(42.GetHashCode());
+		System.Console.WriteLine(contact is PdaItem);
+		
+		contact.print(contact.ToString() as System.String);
+	}
+}
