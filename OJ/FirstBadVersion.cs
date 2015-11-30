@@ -24,8 +24,8 @@ public class Solution : VersionControl {
                 if(IsBadVersion(n-1)){
                     max=n;
                     n=min/2+max/2;
-                    System.Console.WriteLine(n);
-                    System.Threading.Thread.Sleep(1000);
+//                    System.Console.WriteLine(n);
+//                    System.Threading.Thread.Sleep(1000);
                 }
                 else
                     return n;
@@ -37,8 +37,8 @@ public class Solution : VersionControl {
                 else{
                     min = n;
                     n = min/2+max/2;
-                    System.Console.WriteLine(n);
-                    System.Threading.Thread.Sleep(1000);
+//                    System.Console.WriteLine(n);
+//                    System.Threading.Thread.Sleep(1000);
 
                 }         
             }

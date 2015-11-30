@@ -15,8 +15,21 @@ public class Program {
 
 	static public void Main()
 	{
-		SClass h = new SClass();
+		int num;
+		double result = 1, sum=0;
+
+		if(int.TryParse(System.Console.ReadLine(), out num))
+		{
+			while(num-- != 0)
+			{
+				result/=2;
+				sum+=result;
+			}
+
+			System.Console.WriteLine(sum);
+		}
+//		SClass h = new SClass();
 //		h.SPrint();
-		System.Console.WriteLine(int.MaxValue);
+//		System.Console.WriteLine(int.MaxValue);
 	}
 }

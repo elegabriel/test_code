@@ -243,5 +243,8 @@ end
 		{
 			Console.WriteLine("AgeCount finally");
 		}
+		int [] arr = {0,1,2,3,4};
+		int cnt =0;
+		System.Console.WriteLine("{0},{1}",arr[cnt],arr[++cnt]);
 	}
 }
